@@ -63,7 +63,7 @@ resource "aws_s3_bucket_policy" "Policy" {
     })
 }
 
-output "s3_bucket_id" {
-    value = aws_s3_bucket_website_configuration.static.website_endpoint
+output "s3_bucket_website_endpoint" {
+    value = module.s3_static_website.website_endpoint
   
 }
