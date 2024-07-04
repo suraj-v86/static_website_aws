@@ -63,7 +63,7 @@ resource "aws_s3_bucket_policy" "Policy" {
     })
 }
 
-output "s3_bucket_website_endpoint" {
+output "website_endpoint" {
     value = module.s3_static_website.website_endpoint
   
 }
